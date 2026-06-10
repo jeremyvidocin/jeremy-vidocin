@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__6b8c6237-0145-442f-a045-d0262463ffb7__balance",
+      "mcp__6b8c6237-0145-442f-a045-d0262463ffb7__generate_image",
+      "mcp__6b8c6237-0145-442f-a045-d0262463ffb7__job_display",
+      "Bash(curl -s -o public/art/hero.png \"https://d8j0ntlcm91z4.cloudfront.net/user_3Ex3M4svDLLF6CKEQ5CftAnZeRc/hf_20260610_173814_8ee4479e-c26c-4267-a101-8b748ec14332.png\")",
+      "Bash(curl -s -o project-blue.png \"https://d8j0ntlcm91z4.cloudfront.net/user_3Ex3M4svDLLF6CKEQ5CftAnZeRc/hf_20260610_174146_3964ffeb-1116-4881-8486-e0e3c021b5f0.png\")",
+      "Bash(curl -s -o project-green.png \"https://d8j0ntlcm91z4.cloudfront.net/user_3Ex3M4svDLLF6CKEQ5CftAnZeRc/hf_20260610_174148_15598c8f-1dd9-4224-ae62-d49afdcc8a0e.png\")",
+      "Bash(curl -s -o method.png \"https://d8j0ntlcm91z4.cloudfront.net/user_3Ex3M4svDLLF6CKEQ5CftAnZeRc/hf_20260610_174149_3a782260-d07d-4b0c-8945-d8f6c2821054.png\")"
+    ]
+  }
+}

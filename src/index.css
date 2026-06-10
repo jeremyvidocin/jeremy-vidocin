@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== BASE ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink antialiased;
+    font-family: 'Archivo', system-ui, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-cobalt text-cream;
+  }
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F0E6;
+}
+::-webkit-scrollbar-thumb {
+  background: #15120D;
+  border: 3px solid #F4F0E6;
+  border-radius: 0;
+}
+
+/* ===== DISPLAY TYPE ===== */
+.font-display {
+  letter-spacing: -0.01em;
+}
+
+.display-xl {
+  font-family: 'Anton', Impact, sans-serif;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+/* ===== LABEL ===== */
+.eyebrow {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+/* ===== PAPER GRAIN OVERLAY ===== */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ===== MARQUEE MASK ===== */
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+}
+
+/* ===== HAND-DRAWN UNDERLINE ===== */
+.underline-scribble {
+  position: relative;
+  display: inline-block;
+}
+.underline-scribble::after {
+  content: '';
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  bottom: -0.12em;
+  height: 0.16em;
+  background: #2034D9;
+  border-radius: 2px;
+  transform: rotate(-0.4deg);
+}
+
+/* ===== COMPONENTS ===== */
+@layer components {
+  .card-bordered {
+    @apply bg-paper border border-ink/12;
+  }
+
+  .btn-ink {
+    @apply inline-flex items-center gap-2.5 bg-ink text-cream font-semibold px-7 py-4 transition-all duration-300;
+  }
+  .btn-ink:hover {
+    @apply bg-cobalt;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2.5 text-ink font-semibold px-2 py-4 border-b-2 border-transparent transition-all duration-300;
+  }
+  .btn-ghost:hover {
+    @apply border-ink;
+  }
+
+  .chip {
+    @apply inline-flex items-center text-[0.8rem] font-semibold px-3 py-1.5 border border-ink/15 bg-cream;
+  }
+}
