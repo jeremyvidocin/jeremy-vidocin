@@ -8,10 +8,10 @@ const stats = [
 ];
 
 const education = [
-  { years: '2026—28', title: 'Master MIAGE SBI — Paris 1 Panthéon-Sorbonne', note: 'En cours' },
-  { years: '2024—25', title: 'L3 MIAGE — UFR des Antilles', note: 'Top 2 de promotion' },
-  { years: '2022—24', title: 'BTS SIO SLAM — Lycée de Baimbridge', note: 'Major 2e Antilles-Guyane' },
-  { years: '2022', title: 'Bac STI2D SIN', note: 'Mention Bien' },
+  { years: '2026—28', title: 'Master MIAGE SBI — Paris 1 Panthéon-Sorbonne', note: 'Dès sept. 2026' },
+  { years: '2025—26', title: 'L3 MIAGE — UFR des Antilles', note: 'En cours · Top 2 promo' },
+  { years: '2023—25', title: 'BTS SIO SLAM — Lycée de Baimbridge', note: 'Major 2e Antilles-Guyane' },
+  { years: '2023', title: 'Bac Général — Maths & NSI', note: 'Mention Très Bien' },
 ];
 
 const SectionLabel = ({ n, children }) => (
@@ -48,12 +48,12 @@ const About = () => (
         >
           <p>
             Originaire de <span className="font-bold text-ink">Guadeloupe</span> et formé à
-            l'université des Antilles, j'ai construit en 5 ans un profil qui se prête mal aux cases
+            l'université des Antilles, j'ai construit un profil qui se prête mal aux cases
             habituelles : <span className="font-bold text-ink">major 2e Antilles-Guyane</span> en
             BTS SIO, <span className="font-bold text-ink">top 2 de promotion</span> en L3 MIAGE, et
-            aujourd'hui en Master MIAGE <span className="font-bold text-ink">Sustainable Business
-            Informatics</span> à Paris 1 Panthéon-Sorbonne — la voie qui forme les profils SI à
-            double compétence.
+            cap sur le Master MIAGE <span className="font-bold text-ink">Sustainable Business
+            Informatics</span> à Paris 1 Panthéon-Sorbonne pour septembre 2026 — la voie qui forme
+            les profils SI à double compétence.
           </p>
           <p>
             En apprentissage chez <span className="font-bold text-ink">Serene Up!</span> depuis
@@ -64,7 +64,7 @@ const About = () => (
           </p>
           <p>
             Je m'installe en <span className="font-bold text-ink">Île-de-France à partir d'août
-            2026</span> pour démarrer mon alternance Master 2 dès septembre — rythme 3 semaines
+            2026</span> pour démarrer mon alternance de Master dès septembre — rythme 3 semaines
             entreprise / 2 semaines école.
           </p>
 
