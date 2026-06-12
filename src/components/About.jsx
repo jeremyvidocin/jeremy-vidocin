@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 
 const stats = [
   { value: '2e', label: 'Major BTS SIO', sub: 'Antilles-Guyane', color: 'text-cobalt' },
-  { value: 'Top 2', label: 'Promotion L3 MIAGE', sub: 'UFR Antilles', color: 'text-orange' },
+  { value: 'TB', label: 'Mention au Bac', sub: 'Bac Général Maths-NSI · 2023', color: 'text-orange' },
   { value: '960', label: 'TOEIC / 990', sub: 'Anglais C1', color: 'text-forest' },
   { value: '24 mois', label: 'Alternance recherchée', sub: '3 sem. entreprise · 2 sem. école', color: 'text-pink' },
 ];
 
 const education = [
   { years: '2026—28', title: 'Master MIAGE SBI — Paris 1 Panthéon-Sorbonne', note: 'Dès sept. 2026' },
-  { years: '2025—26', title: 'L3 MIAGE — UFR des Antilles', note: 'En cours · Top 2 promo' },
+  { years: '2025—26', title: 'L3 MIAGE — UFR des Antilles', note: 'En cours' },
   { years: '2023—25', title: 'BTS SIO SLAM — Lycée de Baimbridge', note: 'Major 2e Antilles-Guyane' },
   { years: '2023', title: 'Bac Général — Maths & NSI', note: 'Mention Très Bien' },
 ];
@@ -50,7 +50,7 @@ const About = () => (
             Originaire de <span className="font-bold text-ink">Guadeloupe</span> et formé à
             l'université des Antilles, j'ai construit un profil qui se prête mal aux cases
             habituelles : <span className="font-bold text-ink">major 2e Antilles-Guyane</span> en
-            BTS SIO, <span className="font-bold text-ink">top 2 de promotion</span> en L3 MIAGE, et
+            BTS SIO, aujourd'hui en <span className="font-bold text-ink">L3 MIAGE</span>, et
             cap sur le Master MIAGE <span className="font-bold text-ink">Sustainable Business
             Informatics</span> à Paris 1 Panthéon-Sorbonne pour septembre 2026 — la voie qui forme
             les profils SI à double compétence.
