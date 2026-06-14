@@ -15,7 +15,7 @@ const PHONE_HREF = 'tel:+5906907155309';
 const contacts = [
   { icon: Mail, label: 'Email', value: 'jeremyvidocin@gmail.com', href: 'mailto:jeremyvidocin@gmail.com' },
   { icon: Github, label: 'GitHub', value: 'github.com/jeremyvidocin', href: 'https://github.com/jeremyvidocin' },
-  { icon: Linkedin, label: 'LinkedIn', value: 'in/jeremyvidocin', href: 'https://linkedin.com/in/jeremyvidocin' },
+  { icon: Linkedin, label: 'LinkedIn', value: 'in/jeremy-vidocin', href: 'https://www.linkedin.com/in/jeremy-vidocin/' },
   { icon: Phone, label: 'Téléphone', value: PHONE_DISPLAY, href: PHONE_HREF },
 ];
 
