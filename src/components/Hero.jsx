@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ArrowUpRight, CalendarDays, Code2, BarChart3, Target } from 'lucide-react';
 
 const fade = {

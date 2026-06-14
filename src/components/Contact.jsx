@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Mail, Github, Linkedin, Phone, ArrowUpRight, Check, Copy } from 'lucide-react';
 
 const checklist = [

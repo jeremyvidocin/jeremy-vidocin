@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ArrowUpRight, Workflow, GitBranch, ShieldCheck, Database, LineChart, BellRing, FileDown, Users } from 'lucide-react';
 
 const projects = [

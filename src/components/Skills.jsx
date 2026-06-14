@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Hammer, Boxes, Rocket, Sparkles, Compass } from 'lucide-react';
 
 const method = [

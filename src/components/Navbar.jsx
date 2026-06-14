@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 
 const links = [

@@ -1,4 +1,4 @@
-import { MotionConfig } from 'framer-motion';
+import { MotionConfig } from 'motion/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
