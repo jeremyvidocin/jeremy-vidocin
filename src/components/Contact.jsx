@@ -9,8 +9,8 @@ const checklist = [
   'Profil rare double compétence Dev + MOA · anglais C1',
 ];
 
-const PHONE_DISPLAY = '+590 690 71 553 09';
-const PHONE_HREF = 'tel:+5906907155309';
+const PHONE_DISPLAY = '+590 690 71 53 09';
+const PHONE_HREF = 'tel:+590690715309';
 
 const contacts = [
   { icon: Mail, label: 'Email', value: 'jeremyvidocin@gmail.com', href: 'mailto:jeremyvidocin@gmail.com' },

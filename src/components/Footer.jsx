@@ -63,8 +63,8 @@ const Footer = () => (
               <Mail size={15} className="text-cream/55" /> jeremyvidocin@gmail.com
             </li>
             <li>
-              <a href="tel:+5906907155309" className="flex items-center gap-2.5 text-cream/70 hover:text-cream transition-colors">
-                <Phone size={15} className="text-cream/55" /> +590 690 71 553 09
+              <a href="tel:+590690715309" className="flex items-center gap-2.5 text-cream/70 hover:text-cream transition-colors">
+                <Phone size={15} className="text-cream/55" /> +590 690 71 53 09
               </a>
             </li>
             <li className="flex items-center gap-2.5 text-cream/70">
