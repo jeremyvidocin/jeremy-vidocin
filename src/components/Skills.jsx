@@ -51,7 +51,7 @@ const Skills = () => (
           transition={{ duration: 0.6 }}
           className="aspect-square overflow-hidden border border-ink/10 bg-paper"
         >
-          <img src="/art/method.png" alt="Composition graphique abstraite" className="w-full h-full object-cover scale-[1.05]" />
+          <img src="/art/method.webp" alt="Composition graphique abstraite, soleil orange et formes géométriques" width="900" height="900" loading="lazy" decoding="async" className="w-full h-full object-cover scale-[1.05]" />
         </motion.div>
 
         <div>
@@ -86,7 +86,7 @@ const Skills = () => (
         transition={{ duration: 0.6 }}
         className="max-w-3xl mb-12"
       >
-        <p className="eyebrow text-ink/40 mb-3"><span className="text-cobalt">04</span> — Compétences</p>
+        <p className="eyebrow text-ink/55 mb-3"><span className="text-cobalt">04</span> — Compétences</p>
         <h2 className="display-xl text-[2.4rem] sm:text-[3.4rem] text-ink mb-5">
           Stack technique &<br />vocabulaire métier<span className="text-cobalt">.</span>
         </h2>
@@ -105,13 +105,13 @@ const Skills = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.06 }}
-            className="bg-cream p-7 group"
+            className="bg-cream p-7 group transition-colors hover:bg-paper"
           >
             <div className="flex items-center justify-between mb-5">
               <div className="grid place-items-center w-11 h-11 bg-ink text-cream group-hover:bg-cobalt transition-colors">
                 <d.icon size={20} />
               </div>
-              <span className="font-mono text-xs text-ink/30">{d.n} — {d.kicker}</span>
+              <span className="font-mono text-xs text-ink/45">{d.n} — {d.kicker}</span>
             </div>
             <h3 className="font-display text-lg uppercase text-ink mb-4">{d.title}</h3>
             <ul className="space-y-2">
@@ -139,7 +139,7 @@ const Skills = () => (
               <div key={b.label}>
                 <div className="flex justify-between items-baseline mb-1.5">
                   <span className="text-xs font-semibold text-cream/85">{b.label}</span>
-                  <span className="font-mono text-[0.7rem] text-cream/45">{b.v}%</span>
+                  <span className="font-mono text-[0.7rem] text-cream/60">{b.v}%</span>
                 </div>
                 <div className="h-1.5 bg-white/15 overflow-hidden">
                   <motion.div

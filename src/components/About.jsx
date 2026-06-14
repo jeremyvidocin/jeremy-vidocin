@@ -15,7 +15,7 @@ const education = [
 ];
 
 const SectionLabel = ({ n, children }) => (
-  <p className="eyebrow text-ink/40 mb-3">
+  <p className="eyebrow text-ink/55 mb-3">
     <span className="text-cobalt">{n}</span> — {children}
   </p>
 );
@@ -70,16 +70,16 @@ const About = () => (
 
           {/* Education timeline */}
           <div className="pt-6">
-            <p className="eyebrow text-ink/40 mb-5">Formation</p>
+            <p className="eyebrow text-ink/55 mb-5">Formation</p>
             <ul className="space-y-0">
               {education.map((e) => (
                 <li
                   key={e.years}
-                  className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-5 py-4 border-t border-ink/10"
+                  className="group flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-5 py-4 px-3 -mx-3 border-t border-ink/10 transition-colors hover:bg-paper"
                 >
                   <span className="font-mono text-sm text-cobalt shrink-0 w-20">{e.years}</span>
-                  <span className="font-semibold text-ink flex-1">{e.title}</span>
-                  <span className="text-sm text-ink/45">{e.note}</span>
+                  <span className="font-semibold text-ink flex-1 transition-colors group-hover:text-cobalt">{e.title}</span>
+                  <span className="text-sm text-ink/60">{e.note}</span>
                 </li>
               ))}
             </ul>
@@ -95,12 +95,12 @@ const About = () => (
           className="grid grid-cols-2 gap-px bg-ink/10 border border-ink/10 lg:sticky lg:top-28"
         >
           {stats.map((s) => (
-            <div key={s.label} className="bg-cream p-6">
+            <div key={s.label} className="bg-cream p-6 transition-colors hover:bg-paper">
               <div className={`font-display text-4xl md:text-5xl ${s.color} leading-none mb-3`}>
                 {s.value}
               </div>
               <div className="font-semibold text-sm text-ink">{s.label}</div>
-              <div className="text-xs text-ink/45 mt-0.5">{s.sub}</div>
+              <div className="text-xs text-ink/60 mt-0.5">{s.sub}</div>
             </div>
           ))}
         </motion.div>

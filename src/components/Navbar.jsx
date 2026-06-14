@@ -13,12 +13,33 @@ const links = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [active, setActive] = useState('');
   const { scrollYProgress } = useScroll();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scrollspy — highlight the section currently in view
+  useEffect(() => {
+    const ids = links.map((l) => l.href.slice(1));
+    const sections = ids
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      },
+      { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+    );
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -52,16 +73,26 @@ const Navbar = () => {
 
           {/* Desktop links */}
           <div className="hidden lg:flex items-center gap-8">
-            {links.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-semibold text-ink/60 hover:text-ink transition-colors relative group"
-              >
-                {link.name}
-                <span className="absolute -bottom-1.5 left-0 w-0 h-[2px] bg-cobalt group-hover:w-full transition-all duration-300" />
-              </a>
-            ))}
+            {links.map((link) => {
+              const isActive = active === link.href.slice(1);
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  aria-current={isActive ? 'true' : undefined}
+                  className={`text-sm font-semibold transition-colors relative group ${
+                    isActive ? 'text-ink' : 'text-ink/55 hover:text-ink'
+                  }`}
+                >
+                  {link.name}
+                  <span
+                    className={`absolute -bottom-1.5 left-0 h-[2px] bg-cobalt transition-all duration-300 ${
+                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                  />
+                </a>
+              );
+            })}
           </div>
 
           {/* Availability pill */}
@@ -94,16 +125,23 @@ const Navbar = () => {
             className="lg:hidden bg-cream border-t border-ink/10 px-5 py-6"
           >
             <div className="flex flex-col gap-1">
-              {links.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-lg font-bold text-ink py-2.5 border-b border-ink/5"
-                >
-                  {link.name}
-                </a>
-              ))}
+              {links.map((link) => {
+                const isActive = active === link.href.slice(1);
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    aria-current={isActive ? 'true' : undefined}
+                    className={`flex items-center gap-3 text-lg font-bold py-2.5 border-b border-ink/5 ${
+                      isActive ? 'text-cobalt' : 'text-ink'
+                    }`}
+                  >
+                    {isActive && <span className="w-2 h-2 bg-cobalt" />}
+                    {link.name}
+                  </a>
+                );
+              })}
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}

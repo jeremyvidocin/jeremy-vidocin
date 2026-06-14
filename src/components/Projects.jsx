@@ -6,7 +6,7 @@ const projects = [
     n: '01',
     tag: 'Automatisation · 2025',
     title: "Moteur d'automatisation de workflows",
-    art: '/art/project-blue.png',
+    art: '/art/project-blue.webp',
     theme: 'cobalt',
     description:
       "Un outil low-code inspiré de n8n / Zapier : l'utilisateur compose visuellement ses workflows en drag-and-drop, et le moteur backend les exécute en parcours BFS sur le graphe de nœuds.",
@@ -23,7 +23,7 @@ const projects = [
     n: '02',
     tag: 'Data & KPI · 2024—25',
     title: 'Tableau de bord financier avec alertes',
-    art: '/art/project-green.png',
+    art: '/art/project-green.webp',
     theme: 'forest',
     description:
       "Une application de pilotage budgétaire : KPIs dynamiques (recettes, dépenses, marge, runway), graphes interactifs, alertes par seuils et export CSV. Architecture front / back découplée et sécurisée.",
@@ -51,12 +51,12 @@ const ProjectCard = ({ p, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.6, delay: index * 0.12 }}
-      className={`${t.card} text-cream p-7 md:p-9 flex flex-col`}
+      className={`group ${t.card} text-cream p-7 md:p-9 flex flex-col hover-lift-dark`}
     >
       <div className="flex items-start justify-between gap-4 mb-6">
         <div className="flex items-center gap-4">
           <div className="w-24 h-24 md:w-28 md:h-28 overflow-hidden border border-white/20 shrink-0">
-            <img src={p.art} alt="" className="w-full h-full object-cover scale-[1.08]" />
+            <img src={p.art} alt="" width="480" height="480" loading="lazy" decoding="async" className="w-full h-full object-cover scale-[1.08] transition-transform duration-500 group-hover:scale-[1.2]" />
           </div>
           <span className="border border-white/30 px-2.5 py-1 text-[0.72rem] font-bold tracking-widest uppercase">
             Projet {p.n}
@@ -110,7 +110,7 @@ const Projects = () => (
         transition={{ duration: 0.6 }}
         className="mb-14 max-w-3xl"
       >
-        <p className="eyebrow text-cream/40 mb-3"><span className="text-orange">03</span> — Projets phares</p>
+        <p className="eyebrow text-cream/55 mb-3"><span className="text-orange">03</span> — Projets phares</p>
         <h2 className="display-xl text-[2.4rem] sm:text-[3.4rem] text-cream mb-5">
           Deux preuves qu'un dev<br />peut piloter du SI<span className="text-orange">.</span>
         </h2>

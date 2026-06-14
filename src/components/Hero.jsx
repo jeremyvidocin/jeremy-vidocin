@@ -110,11 +110,15 @@ const Hero = () => {
             animate="visible"
             className="relative"
           >
-            <div className="relative aspect-[4/5] overflow-hidden border border-ink/10 bg-paper">
+            <div className="group relative aspect-[4/5] overflow-hidden border border-ink/10 bg-paper">
               <img
-                src="/art/hero.png"
-                alt="Composition graphique abstraite"
-                className="w-full h-full object-cover scale-[1.06]"
+                src="/art/hero.webp"
+                alt="Composition graphique abstraite aux couleurs vives, style collage"
+                width="1000"
+                height="1339"
+                fetchpriority="high"
+                decoding="async"
+                className="w-full h-full object-cover scale-[1.06] transition-transform duration-700 ease-out group-hover:scale-[1.13]"
               />
             </div>
 

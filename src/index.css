@@ -16,6 +16,36 @@
   ::selection {
     @apply bg-cobalt text-cream;
   }
+
+  /* Anchored sections clear the fixed navbar */
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  /* Keyboard focus — visible cobalt ring, brand-consistent */
+  :focus-visible {
+    outline: 3px solid #2034D9;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  /* On dark sections, focus ring switches to cream for contrast */
+  .bg-ink :focus-visible {
+    outline-color: #F4F0E6;
+  }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
 /* ===== CUSTOM SCROLLBAR ===== */
@@ -108,5 +138,23 @@
 
   .chip {
     @apply inline-flex items-center text-[0.8rem] font-semibold px-3 py-1.5 border border-ink/15 bg-cream;
+  }
+
+  /* Brutalist hard-shadow lift — for standalone cards on light bg */
+  .hover-lift {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .hover-lift:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0 0 #15120d;
+  }
+
+  /* Lift for cards sitting on the dark (ink) sections */
+  .hover-lift-dark {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .hover-lift-dark:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0 0 rgba(244, 240, 230, 0.9);
   }
 }

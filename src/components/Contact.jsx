@@ -69,7 +69,7 @@ const Contact = () => {
 
           {/* checklist */}
           <div className="border-t lg:border-t-0 lg:border-l border-cream/15 pt-8 lg:pt-0 lg:pl-10">
-            <p className="eyebrow text-cream/40 mb-5">Ce que je recherche</p>
+            <p className="eyebrow text-cream/55 mb-5">Ce que je recherche</p>
             <ul className="space-y-4">
               {checklist.map((c) => (
                 <li key={c} className="flex items-start gap-3">
@@ -96,7 +96,7 @@ const Contact = () => {
               <div className="grid place-items-center w-10 h-10 bg-ink text-cream mb-4 group-hover:bg-cobalt transition-colors">
                 <c.icon size={18} />
               </div>
-              <p className="eyebrow text-ink/40 mb-1">{c.label}</p>
+              <p className="eyebrow text-ink/55 mb-1">{c.label}</p>
               <p className="font-semibold text-ink text-sm break-all">{c.value}</p>
             </a>
           ))}

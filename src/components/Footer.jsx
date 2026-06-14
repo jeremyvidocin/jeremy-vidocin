@@ -43,7 +43,7 @@ const Footer = () => (
 
         {/* Quick links */}
         <div>
-          <p className="eyebrow text-cream/40 mb-4">Liens rapides</p>
+          <p className="eyebrow text-cream/55 mb-4">Liens rapides</p>
           <ul className="space-y-2.5">
             {quickLinks.map((l) => (
               <li key={l.name}>
@@ -57,18 +57,18 @@ const Footer = () => (
 
         {/* Contact */}
         <div>
-          <p className="eyebrow text-cream/40 mb-4">Me contacter</p>
+          <p className="eyebrow text-cream/55 mb-4">Me contacter</p>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2.5 text-cream/70">
-              <Mail size={15} className="text-cream/40" /> jeremyvidocin@gmail.com
+              <Mail size={15} className="text-cream/55" /> jeremyvidocin@gmail.com
             </li>
             <li>
               <a href="tel:+5906907155309" className="flex items-center gap-2.5 text-cream/70 hover:text-cream transition-colors">
-                <Phone size={15} className="text-cream/40" /> +590 690 71 553 09
+                <Phone size={15} className="text-cream/55" /> +590 690 71 553 09
               </a>
             </li>
             <li className="flex items-center gap-2.5 text-cream/70">
-              <MapPin size={15} className="text-cream/40" /> Île-de-France (dès août 2026)
+              <MapPin size={15} className="text-cream/55" /> Île-de-France (dès août 2026)
             </li>
             <li className="flex items-center gap-2.5 text-emerald-400">
               <span className="w-2 h-2 rounded-full bg-emerald-400" /> Disponible dès sept. 2026
@@ -78,7 +78,7 @@ const Footer = () => (
 
         {/* Download */}
         <div>
-          <p className="eyebrow text-cream/40 mb-4">Télécharger</p>
+          <p className="eyebrow text-cream/55 mb-4">Télécharger</p>
           <a
             href="/cv-jeremy-vidocin.pdf"
             target="_blank"
@@ -86,12 +86,12 @@ const Footer = () => (
             className="flex items-center justify-between gap-2 text-cream/70 text-sm hover:text-cream transition-colors group"
           >
             CV (PDF)
-            <Download size={15} className="text-cream/40 group-hover:text-cream transition-colors" />
+            <Download size={15} className="text-cream/55 group-hover:text-cream transition-colors" />
           </a>
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-7 text-xs text-cream/40">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-7 text-xs text-cream/55">
         <span>© 2026 Jérémy Vidocin — Tous droits réservés.</span>
         <span className="font-mono">Conçu et codé à la main · React · Tailwind</span>
       </div>

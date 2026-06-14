@@ -64,7 +64,7 @@ const Experience = () => (
         transition={{ duration: 0.6 }}
         className="max-w-3xl mb-16"
       >
-        <p className="eyebrow text-ink/40 mb-3"><span className="text-cobalt">05</span> — Parcours</p>
+        <p className="eyebrow text-ink/55 mb-3"><span className="text-cobalt">05</span> — Parcours</p>
         <h2 className="display-xl text-[2.4rem] sm:text-[3.4rem] text-ink">
           Quatre terrains,<br />un fil rouge : livrer<span className="text-cobalt">.</span>
         </h2>
